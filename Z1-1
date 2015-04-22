@@ -1,0 +1,48 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace z1_1
+{
+    class LinearFunction
+    {
+        static void Main()
+        {
+            int a = 0;
+            int b = 0;
+            int x = 0;
+            Console.WriteLine("Введите число а");
+            for (int i = 0; i < 1; i++)
+            {
+                int in_a = 0;
+                string a1 = "";
+                a1 = Console.ReadLine();
+                int.TryParse(a1, out in_a);
+                a += in_a;
+            }
+            Console.WriteLine("Введите число b");
+            for (int i = 0; i < 1; i++)
+            {
+                int in_b = 0;
+                string b1 = "";
+                b1 = Console.ReadLine();
+                int.TryParse(b1, out in_b);
+                b += in_b;
+            }
+            Console.WriteLine("Введите число x");
+            for (int i = 0; i < 1; i++)
+            {
+                int in_x = 0;
+                string x1 = "";
+                x1 = Console.ReadLine();
+                int.TryParse(x1, out in_x);
+                x += in_x;
+            }
+            int y = a * x + b;
+            Console.WriteLine("Число y равно " + y);
+            Console.ReadKey();
+        }
+
+    }
+}
